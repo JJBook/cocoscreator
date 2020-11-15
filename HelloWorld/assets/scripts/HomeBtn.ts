@@ -58,10 +58,13 @@ export default class HomeBtn extends cc.Component {
         if (!button){
             return;
         }
-        
+        button.enabled = false
+    }
+
+    bindTouch() {
         this.node.on(cc.Node.EventType.MOUSE_DOWN, function ( event ) {
             console.log('Hello click!');
-          }, this);
+        }, this);
     }
 
     // update (dt) {}

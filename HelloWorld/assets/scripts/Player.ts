@@ -29,14 +29,13 @@ export default class Player extends cc.Component {
     start () {
 
         var node = this.node
-        node.x = 100
 
-        var seq = cc.repeatForever(
-             cc.sequence(
-                 cc.moveBy(2, 200, 0),
-                 cc.moveBy(2, -200, 0)
-             ))
-        this.node.runAction(seq)
+        // var seq = cc.repeatForever(
+        //      cc.sequence(
+        //          cc.moveBy(2, 200, 0),
+        //          cc.moveBy(2, -200, 0)
+        //      ))
+        // this.node.runAction(seq)
 
         cc.log(this.node.getComponent(cc.Label) === this.getComponent(cc.Label))
 
